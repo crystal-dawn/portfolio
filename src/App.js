@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import MainPage from './components/main-page/MainPage';
+import Banner from './components/banner/Banner';
 import Projects from './components/projects/Projects';
 
 function App() {
     return (
         <>
-            <MainPage />
+            <Banner />
             <Projects />
         </>
     );

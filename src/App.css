@@ -1,0 +1,8 @@
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+#root:first-child {
+    max-width: 100vw;
+}

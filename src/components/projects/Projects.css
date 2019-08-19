@@ -1,9 +1,4 @@
 .projects {
     display: flex;
-    min-height: 50vh;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 900px;
-    flex-basis: 0 0 100%;
+    flex-direction: column;
 }
