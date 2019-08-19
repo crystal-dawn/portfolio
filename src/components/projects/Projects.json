@@ -2,17 +2,33 @@
   {
     "id": "1",
     "name": "Neighborhood Map",
-    "skills": [ "fab fa-react fa-6x", "fab fa-foursquare fa-6x", "fab fa-google fa-6x" ],
+    "skills": [ "fab fa-react fa-5x", "fab fa-foursquare fa-5x", "fab fa-google fa-5x" ],
     "description": "React SPA featuring Google Maps and FourSquare API",
     "livePage": "http://udacityneighborhoodmapproject.netlify.com/",
     "repo": "https://github.com/crystal-dawn/neighborhood-map"
   },
   {
     "id": "2",
-    "name": "Neighborhood Map",
-    "skills": [ "fab fa-react fa-6x", "fab fa-foursquare fa-6x", "fab fa-google fa-6x" ],
-    "description": "React SPA featuring Google Maps and FourSquare API",
-    "livePage": "http://udacityneighborhoodmapproject.netlify.com/",
-    "repo": "https://github.com/crystal-dawn/neighborhood-map"
+    "name": "Resource Collection",
+    "skills": [ "fab fa-gulp fa-5x", "fab fa-css3 fa-5x", "fab fa-npm fa-5x" ],
+    "description": "GitHub Page of resources curated for Udacity's Front-End Web Developer Nanodegree projects. Featured in official Udacity classroom as recommended resource for all students.",
+    "livePage": "https://crystal-dawn.github.io/udacity-fend-restaurant-reviews-stage-1-resources/",
+    "repo": ""
+  },
+  {
+    "id": "3",
+    "name": "Restaurant Reviews",
+    "skills": [ "fab fa-accessible-icon fa-5x", "fab fa-html5 fa-5x", "fab fa-css3 fa-5x" ],
+    "description": "Responsive interactive restaurant review site. Map and cards filter to display full restaurant details.",
+    "livePage": "https://crystal-dawn.github.io/restaurant-reviews-stage-1/",
+    "repo": "https://github.com/crystal-dawn/restaurant-reviews-stage-1"
+  },
+  {
+    "id": "4",
+    "name": "Restaurant Reviews",
+    "skills": [ "fab fa-accessible-icon fa-5x", "fab fa-html5 fa-5x", "fab fa-css3 fa-5x" ],
+    "description": "Responsive interactive restaurant review site. Map and cards filter to display full restaurant details.",
+    "livePage": "https://crystal-dawn.github.io/restaurant-reviews-stage-1/",
+    "repo": "https://github.com/crystal-dawn/restaurant-reviews-stage-1"
   }
 ]

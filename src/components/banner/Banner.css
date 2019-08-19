@@ -17,7 +17,6 @@
 .banner-slogan {
     position: absolute;
     font: 5em 'Marcellus', serif;
-
 }
 
 .banner-main-image {
@@ -30,7 +29,7 @@
     background-color: #F7C331;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: baseline;
 }
 

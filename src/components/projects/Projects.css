@@ -1,4 +1,15 @@
 .projects {
     display: flex;
     flex-direction: column;
+    margin: 2%;
+}
+
+.project:nth-child(even) {
+    background-color: #DCC7AA;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.project:nth-child(even) > * {
+    padding: 1;
 }
