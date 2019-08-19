@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\main-page",
+    "\\src\\components\\projects",
+    "\\src\\components\\projects\\project",
+    "\\src\\components\\projects\\project\\skills"
+  ],
+  "SelectedNode": "\\src\\components\\projects\\project\\skills\\Skills.js",
+  "PreviewInSolutionExplorer": false
+}

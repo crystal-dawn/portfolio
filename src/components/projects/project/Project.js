@@ -1,14 +1,14 @@
 import React from 'react';
 import './Project.css';
-import ReactSkill from './skills/ReactSkill';
+import Skills from './skills/Skills';
+import Info from './info/Info';
 
 const Project = (props) => (
     <>
-        <h3>{props.name}</h3>
+        <Info {...props} />
         <>
-            {props.skills.map((skill, index) => <ReactSkill key={index} skill={skill} />)}
+            {props.skills.map((skill, index) => <Skills key={index} skill={skill} />)}
         </>
-
     </>
 )
 

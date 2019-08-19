@@ -13,11 +13,18 @@ export default class Projects extends Component {
 
     render() {
         return (
-            <>
+            <div className="projects">
                 {this.state.projects.map((project, id) =>
-                    <Project key={id} name={project.name} skills={project.skills} />
+                    <Project className="project"
+                        key={id}
+                        name={project.name}
+                        skills={project.skills}
+                        description={project.description}
+                        livePage={project.livePage}
+                        repo={project.repo}
+                    />
                 )}
-            </>
+            </div>
         )
     }
 }

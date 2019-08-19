@@ -1,6 +1,18 @@
 [
   {
-    "name": "Neighbordhood Map",
-    "skills": [ "FaReact", "FaCss3", "FaHtml5", "FaJs" ]
+    "id": "1",
+    "name": "Neighborhood Map",
+    "skills": [ "fab fa-react fa-6x", "fab fa-foursquare fa-6x", "fab fa-google fa-6x" ],
+    "description": "React SPA featuring Google Maps and FourSquare API",
+    "livePage": "http://udacityneighborhoodmapproject.netlify.com/",
+    "repo": "https://github.com/crystal-dawn/neighborhood-map"
+  },
+  {
+    "id": "2",
+    "name": "Neighborhood Map",
+    "skills": [ "fab fa-react fa-6x", "fab fa-foursquare fa-6x", "fab fa-google fa-6x" ],
+    "description": "React SPA featuring Google Maps and FourSquare API",
+    "livePage": "http://udacityneighborhoodmapproject.netlify.com/",
+    "repo": "https://github.com/crystal-dawn/neighborhood-map"
   }
 ]

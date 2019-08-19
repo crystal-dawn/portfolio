@@ -15,7 +15,7 @@ const MainPage = () => {
             </div>
             <div className="main-heading-wrapper">
                 <h1 className="main-name">Crystal Yungwirth</h1>
-                <h2 className="main-tagline">Front-End Web Developer</h2>;
+                <h2 className="main-tagline">Front-End Web Developer</h2>
             </div>
         </header>
     )
