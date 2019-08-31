@@ -1,0 +1,15 @@
+.title-block {
+    transform: translateY(-30%);
+}
+
+.citrus {
+    background-color: #F7C331;
+}
+
+.name,
+.title {
+    font-family: "Laila", serif;
+    z-index: 1;
+    transform: translateY(111%);
+    text-align: center;
+}

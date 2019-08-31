@@ -1,0 +1,28 @@
+.honeycomb {
+    position: relative;
+    margin: 1em auto;
+    width: 10em;
+    height: 17.32em;
+    border-radius: 1em/.5em;
+    transition: opacity 2s;
+    transform: rotate(90deg) translateX(-100%);
+    z-index: -1;
+}
+
+    .honeycomb:before, .honeycomb:after {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        background: inherit;
+        content: '';
+        z-index: -1;
+    }
+
+    .honeycomb:before {
+        transform: rotate(60deg);
+    }
+
+    .honeycomb:after {
+        transform: rotate(-60deg);
+    }

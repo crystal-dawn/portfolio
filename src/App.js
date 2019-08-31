@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Banner from './components/banner/Banner';
-import Projects from './components/projects/Projects';
+import Header from './components/header/Header';
+/*import Projects from './components/projects/Projects';*/
 
 function App() {
     return (
         <>
-            <Banner />
-            <Projects />
+            <Header />
+            {/*<Projects />*/}
         </>
     );
 }
