@@ -1,14 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\src",
-    "\\src\\components",
-    "\\src\\components\\main-page",
-    "\\src\\components\\projects",
-    "\\src\\components\\projects\\project",
-    "\\src\\components\\projects\\project\\skills"
+    "\\client",
+    "\\client\\src"
   ],
-  "SelectedNode": "\\src\\components\\projects\\project\\skills\\Skills.js",
+  "SelectedNode": "\\client\\src\\normalize.css",
   "PreviewInSolutionExplorer": false
 }

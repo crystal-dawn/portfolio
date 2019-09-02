@@ -1,0 +1,41 @@
+/* TODO https://www.npmjs.com/package/react-google-recaptcha
+     * Invisible reCaptcha
+*/
+.contact-form-container {
+    max-width: 700px;
+}
+
+/* Hide honey pot on mobile*/
+.honey-pot {
+    display: none;
+}
+
+input, select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical
+}
+
+fieldset {
+    border: none;
+}
+
+.contact-form-submit {
+    background-color: #6B7A8F;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-form-submit:hover {
+    opacity: .7;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .honey-pot {
+        display: block;
+    }
+}
