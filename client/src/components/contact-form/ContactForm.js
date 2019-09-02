@@ -46,40 +46,41 @@ class Contactform extends Component {
                             className="contact-form-name-label"
                             htmlFor="name">
                             Pleasure to meet you! What should I call you?
-                            </label>
                         <input
                             className="contact-form-name-input"
                             type="text"
                             name="name"
                             onChange={this.handleChange}
                             required
-                        />
+                            />
+                        </label>
                     </fieldset>
                     <fieldset className="contact-form-email-fieldset">
                         <label
                             className="contact-form-email-label"
-                            htmlFor="email">Where should I send a response?</label>
+                            htmlFor="email">Where should I send a response?
                         <input
                             className="contact-form-email-input"
                             type="email"
                             name="email"
                             onChange={this.handleChange}
                             required
-                        />
+                            />
+                        </label>
                     </fieldset>
                     <fieldset className="contact-form-message-fieldset">
                         <label
                             className="contact-form-message-label"
                             htmlFor="message">
                             What's on your mind?
-                            </label>
                         <textarea
                             className="contact-form-message-textarea"
                             name="message"
                             rows={6}
                             onChange={this.handleChange}
                             required
-                        />
+                            />
+                        </label>
                     </fieldset>
 
                     <input

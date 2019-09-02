@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\client",
-    "\\client\\src"
+    "\\client\\src",
+    "\\client\\src\\components",
+    "\\client\\src\\components\\contact-form"
   ],
-  "SelectedNode": "\\client\\src\\normalize.css",
+  "SelectedNode": "\\client\\src\\components",
   "PreviewInSolutionExplorer": false
 }
