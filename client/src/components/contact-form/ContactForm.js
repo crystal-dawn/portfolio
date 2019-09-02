@@ -41,34 +41,49 @@ class Contactform extends Component {
                 <form className="contact-form"
                     onSubmit={this.handleSubmit}
                 >
-                    <fieldset className="contact-form-fieldset">
-                        <label htmlFor="name">Pleasure to meet you! What should I call you?</label>
+                    <fieldset className="contact-form-name-fieldset">
+                        <label
+                            className="contact-form-name-label"
+                            htmlFor="name">
+                            Pleasure to meet you! What should I call you?
+                            </label>
                         <input
+                            className="contact-form-name-input"
                             type="text"
                             name="name"
                             onChange={this.handleChange}
                             required
                         />
                     </fieldset>
-                    <fieldset className="contact-form-fieldset textArea">
-                        <label htmlFor="message">What's on your mind?</label>
-                        <textarea
-                            name="message"
-                            onChange={this.handleChange}
-                            required
-                        />
-                    </fieldset>
-                    <fieldset className="contact-form-fieldset">
-                        <label htmlFor="email">Where should I send a response?</label>
+                    <fieldset className="contact-form-email-fieldset">
+                        <label
+                            className="contact-form-email-label"
+                            htmlFor="email">Where should I send a response?</label>
                         <input
+                            className="contact-form-email-input"
                             type="email"
                             name="email"
                             onChange={this.handleChange}
                             required
                         />
                     </fieldset>
+                    <fieldset className="contact-form-message-fieldset">
+                        <label
+                            className="contact-form-message-label"
+                            htmlFor="message">
+                            What's on your mind?
+                            </label>
+                        <textarea
+                            className="contact-form-message-textarea"
+                            name="message"
+                            rows={6}
+                            onChange={this.handleChange}
+                            required
+                        />
+                    </fieldset>
+
                     <input
-                        className="contact-form-submit"
+                        className="contact-form-submit-input"
                         type="submit"
                     />
                 </form>

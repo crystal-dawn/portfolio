@@ -2,40 +2,136 @@
      * Invisible reCaptcha
 */
 .contact-form-container {
-    max-width: 700px;
+    max-width: 400px;
+    display: flex;
+    align-self: flex-end;
 }
 
 /* Hide honey pot on mobile*/
 .honey-pot {
     display: none;
+    position: absolute;
+    z-index: -1;
 }
 
-input, select, textarea {
-    width: 100%; 
-    padding: 12px;
+.contact-form-container {
+    position: absolute;
+    z-index: 1;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 1em;
     border-radius: 4px;
     box-sizing: border-box;
-    resize: vertical
 }
 
-fieldset {
+fieldset[class^="contact-form"] {
     border: none;
 }
 
 .contact-form-submit {
-    background-color: #6B7A8F;
+    background-color: #6b7a8f;
     color: white;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .contact-form-submit:hover {
-    opacity: .7;
+    opacity: 0.7;
 }
 
-
 @media only screen and (min-width: 600px) {
+    input:focus,
+    textarea:focus {
+        border-radius: 10px;
+        background-color: rgba(999, 999, 999, 0.5);
+    }
+
     .honey-pot {
         display: block;
     }
+
+    .contact-form-name-label,
+    .contact-form-email-label,
+    .contact-form-message-label {
+        position: relative;
+        color: white;
+        font-size: 1.185em;
+        left: 4.2em;
+    }
+
+    .contact-form-name-input,
+    .contact-form-email-input {
+        position: relative;
+        left: 3em;
+        font-size: 1.4em;
+        border: none;
+    }
+
+    .contact-form-name-label {
+        top: 1.6em;
+        border: none;
+    }
+
+    .contact-form-name-input {
+        text-align: center;
+        top: 1.4em;
+        left: 4em;
+        width: 87.3%;
+    }
+
+    .contact-form-email-label {
+        top: 1em;
+    }
+
+    .contact-form-email-input {
+        width: 90%;
+        top: .9em;
+        left: 4em;
+        text-align: left;
+    }
+
+    .contact-form-message-label {
+        color: black;
+        position: relative;
+        top: 3em;
+        left: 3.8em;
+    }
+
+    .contact-form-message-textarea {
+        position: relative;
+        top: 3.4em;
+        left: 4em;
+        border: none;
+    }
+
+    .contact-form-submit-input {
+        position: relative;
+        top: 4.1em;
+        left: 12em;
+        height: 80px;
+        width: 185px;
+        border-radius: 70px / 50px;
+        background-color: #dcc7aa;
+    }
+
+    label,
+    input,
+    textarea {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0.5em;
+    }
+        /* Change Autocomplete styles in Chrome*/
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus {
+            -webkit-box-shadow: 0 0 0px 1000px #f7c331 inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
 }
