@@ -7,6 +7,9 @@
     transition: opacity 2s;
     transform: rotate(90deg) translateX(-100%);
     z-index: -1;
+    border-bottom: 3px inset #f7882f;
+    border-top: 3px inset #f7882f;
+
 }
 
     .honeycomb:before, .honeycomb:after {
@@ -17,6 +20,8 @@
         background: inherit;
         content: '';
         z-index: -1;
+        border-bottom: 5px outset #F7882F;
+        border-top: 5px outset #f7882f;
     }
 
     .honeycomb:before {
