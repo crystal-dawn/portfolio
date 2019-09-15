@@ -1,5 +1,6 @@
 .title-block {
     transform: translateY(-30%);
+    max-height: 50vh;
 }
 
 .citrus {
