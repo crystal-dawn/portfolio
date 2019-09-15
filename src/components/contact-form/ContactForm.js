@@ -38,8 +38,10 @@ class Contactform extends Component {
                     src={honeyPot}
                     alt="honey pot"    
                 />
+                {/* Contact form supported by Formspree */}
                 <form className="contact-form"
-                    onSubmit={this.handleSubmit}
+                    action=" https://formspree.io/crystalyungwirth@gmail.com"
+                    method="POST"
                 >
                     <fieldset className="contact-form-name-fieldset">
                         <label
