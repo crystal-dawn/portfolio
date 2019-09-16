@@ -1,13 +1,4 @@
-/* TODO https://www.npmjs.com/package/react-google-recaptcha
-     * Invisible reCaptcha
-*/
-.contact-form-container {
-    max-width: 400px;
-    display: flex;
-    align-self: flex-end;
-}
-
-/* Hide honey pot on mobile*/
+/* Hide honey pot on mobile */
 .honey-pot {
     display: none;
     position: absolute;
@@ -15,8 +6,9 @@
 }
 
 .contact-form-container {
-    position: absolute;
-    z-index: 1;
+    max-width: 400px;
+    display: flex;
+    align-self: flex-end;
 }
 
 input,
@@ -32,16 +24,20 @@ fieldset[class^="contact-form"] {
     border: none;
 }
 
-.contact-form-submit {
-    background-color: #6b7a8f;
+.contact-form-submit-input {
+    font-size: 1.185em;
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    background-color: #dcc7aa;
 }
+
 
 .contact-form-submit:hover {
     opacity: 0.7;
 }
+
+/*
 
 @media only screen and (min-width: 600px) {
     input:focus,
@@ -115,7 +111,6 @@ fieldset[class^="contact-form"] {
         height: 80px;
         width: 185px;
         border-radius: 70px / 50px;
-        background-color: #dcc7aa;
     }
 
     label,
@@ -124,7 +119,7 @@ fieldset[class^="contact-form"] {
         background-color: rgba(0, 0, 0, 0);
         padding: 0.5em;
     }
-        /* Change Autocomplete styles in Chrome*/
+        /* Change Autocomplete styles in Chrome
         input:-webkit-autofill,
         input:-webkit-autofill:hover,
         input:-webkit-autofill:focus,
@@ -135,3 +130,4 @@ fieldset[class^="contact-form"] {
             transition: background-color 5000s ease-in-out 0s;
         }
 }
+*/
