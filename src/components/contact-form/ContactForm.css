@@ -25,11 +25,12 @@ fieldset[class^="contact-form"] {
 }
 
 .contact-form-submit-input {
-    font-size: 1.185em;
-    color: white;
+    font-size: 1.4em;
+    padding: 3%;
+    color: black;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #dcc7aa;
+    background-color: #6b7A8f;
 }
 
 

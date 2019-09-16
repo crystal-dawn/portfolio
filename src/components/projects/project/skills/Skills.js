@@ -3,6 +3,6 @@ import React from 'react';
 import './fontawesome-free-5.10.1-web/css/all.css';
 import './Skills.css';
 
-const Skill = (props) => <i className={props.skill}></i>;
+const Skill = (props) => <i className={props.skill} aria-hidden="true"></i>;
  
 export default Skill;
