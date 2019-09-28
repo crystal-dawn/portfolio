@@ -1,34 +1,38 @@
-.skills {
-    display: flex;
-    flex-direction: row;
-}
-
 .skill {
     width: 51.96px;
     height: 90px;
+    border-width: 2px;
 }
+    .skill:before, .skill:after {
+        border-width: 2px;
+    }
+
+    .skill:first-child {
+        top: 31px;
+        left: 43px;
+    }
+
+    .skill:last-child {
+        bottom: 31px;
+        left: 43px;
+    }
 
 .skill-honeycomb {
     margin-left: 36px;
 }
 
-.skill-honeycomb:first-child {
-    margin-left: 20px;
-}
+    .skill-honeycomb:first-child {
+        margin-left: 20px;
+    }
 
-.skill-honeycomb > .fab {
-    position: absolute;
-    font-size: 4em;
-    z-index: 1;
-    transform: translateY(-250%);
-}
+    .skill-honeycomb > .fab {
+        position: absolute;
+        z-index: 1;
+        transform: translateY(-100%) translateY(-90px);
+    }
 
-.skill:first-child {
-    top: 31px;
-    left: 43px;
-}
-
-.skill:last-child {
-    bottom: 31px;
-    left: 43px;
+.skills {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
 }
