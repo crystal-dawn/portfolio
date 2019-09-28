@@ -1,5 +1,5 @@
-.title-block {
-    transform: translateY(-20%);
+.name {
+    font-size: 2em;
 }
 
 .name,
@@ -8,4 +8,11 @@
     z-index: 1;
     transform: translateY(111%);
     text-align: center;
+}
+
+.title {
+    font-size: 1.15em;
+}
+.title-block {
+    transform: translateY(-20%);
 }
