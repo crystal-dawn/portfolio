@@ -17,4 +17,5 @@
 
 .title-block {
     transform: translateY(1%);
+    height: 18vh;
 }
