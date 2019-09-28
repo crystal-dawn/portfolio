@@ -7,9 +7,8 @@
     transition: opacity 2s;
     transform: rotate(90deg) translateX(-100%);
     z-index: -1;
-    border-bottom: 3px inset #f7882f;
-    border-top: 3px inset #f7882f;
-
+    border-bottom: 3px inset #fcd4B4;
+    border-top: 3px inset #e17021;
 }
 
     .honeycomb:before, .honeycomb:after {
@@ -20,8 +19,8 @@
         background: inherit;
         content: '';
         z-index: -1;
-        border-bottom: 5px outset #F7882F;
-        border-top: 5px outset #f7882f;
+        border-bottom: 3px outset #e17021;
+        border-top: 3px outset #fcd4B4;
     }
 
     .honeycomb:before {
@@ -37,3 +36,34 @@
 .citrus {
     background-color: #F7C331;
 }
+
+
+/** Firefox cross-browser color consistency*/
+@-moz-document url-prefix() {
+    .honeycomb {
+        border-bottom-color: #f7882f;
+        border-top-color: #f7882f;
+    }
+
+        .honeycomb:before, .honeycomb:after {
+            border-bottom-color: #f7882f;
+            border-top-color: #f7882f;
+        }
+}
+
+/** Edge cross-browser color consistency */
+/*FIX: Top right color not light how it should, turns grey not pink when adjusting*/
+/*
+@supports (-ms-ime-align:auto) {
+    .honeycomb {
+        border-bottom-color: #f7882f;
+        border-top-color: #f7882f;
+    }
+
+        .honeycomb:before, .honeycomb:after {
+            border-bottom-color: #f7882f;
+            border-top-color: #f7882f;
+        }
+
+}  
+*/
