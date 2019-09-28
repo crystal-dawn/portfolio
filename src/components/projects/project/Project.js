@@ -9,10 +9,10 @@ const Project = (props) => (
         <Info {...props} />
         <div className="skills">
             {props.skills.map((skill, index) => (
-                <div className="skill-honeycomb">
+                <div key={index} className="skill-honeycomb">
                     <Honeycomb className="citrus skill" />
                     <Honeycomb className="citrus skill" />
-                    <Skills key={index} skill={skill} />
+                    <Skills skill={skill} />
                     <Honeycomb className="citrus skill" />
                     </div>
                     )
