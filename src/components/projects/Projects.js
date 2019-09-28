@@ -16,7 +16,7 @@ export default class Projects extends Component {
         axios
             .get(
                 window.encodeURI(
-                    `https://api.github.com/users/crystal-dawn?client_id=eba91468caaaab193ec0&client_secret=97f58e109ec1200b2e1bf536b3422b416ba795de`,
+                    `https://api.github.com/users/crystal-dawn?client_id=GITHUB_CLIENT_ID&client_secret=GITHUB_CLIENT_SECRECT`,
                 ),
             )
             .then(response => {
