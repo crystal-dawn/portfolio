@@ -1,18 +1,12 @@
 .project-info {
     height: 90%;
+    max-width: 400px;
 } 
 
 .project-link {
     color: #6b7a8f;
     font-size: 1.4em;
     text-transform: uppercase;
-}
-
-@media only screen and (min-width: 719px) {
-    .project-info {
-        margin-left: 10%;
-        margin-bottom: 10%;
-    }
 }
 
    

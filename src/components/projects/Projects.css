@@ -1,14 +1,10 @@
-.projects {
-    margin: 0 2%;
-    align-self: baseline;
-}
-
 
 @media only screen and (min-width: 719px) {
-
     .projects {
         display: flex;
         flex-direction: column;
+        margin: auto;
+        max-width: 80vw;
     }
 
     .project:nth-child(odd) {
