@@ -9,7 +9,7 @@ class App extends Component {
             <div className="container">
                 <Header />
                 <Projects />
-                {/* <ContactForm /> */}
+                <ContactForm />
             </div>
         );
     }
