@@ -5,7 +5,7 @@ const Info = (props) => {
     {/*Format slug from GitHub API data.
      * Projects.json has to have an empty string for name 
      */}
-    const name = props.name.replace("-", " ");;
+    const name = props.name.replace(/-/gi, " ");
 
     return (
         <section className="project-info">
