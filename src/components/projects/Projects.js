@@ -10,18 +10,20 @@ export default class Projects extends Component {
             data: [],
             isLoading: false,
             error: null,
-            projects
+            projects,
         }
     }
 
     componentDidMount() {
+    /* Build up GitHub URL */
+    /*TODO: GitHub authorization so all components of projects come from GitHub */
         const clientId = process.env.GITHUB_CLIENT_ID;
         const clientSecret = process.env.GITHUB_CLIENT_SECRET;
         const hostName = "https://api.github.com/users/";
         const searchPath = "crystal-dawn/repos?";
         const searchUrl = new URL(searchPath, hostName);
         const url = `${searchUrl}client_id=${clientId}&client_secret=${clientSecret}`;
-
+    /* Fetch */
         fetch(url)
             .then(response => {
                 if (response.ok) {
@@ -32,10 +34,22 @@ export default class Projects extends Component {
             })
             .then(data => this.setState({ data, isLoading: false }))
             .catch(error => this.setState({ error, isLoading: false }));
+
     }
 
     render() {
-        const { data, isLoading, error } = this.state;
+        const { projects, data, isLoading, error } = this.state;
+        {/* Merge the existing project array with imported GitHub API data */}
+        const merged = [];
+
+        projects.forEach(project => {
+            merged.push({
+                ...project,
+                ...(data.find(repo => repo.id == project.id))
+            });
+        })
+
+        console.log(merged);
         if (error) {
             return <p>{error.message}</p>;
         }
@@ -44,25 +58,16 @@ export default class Projects extends Component {
         }
         return (
             <div className="projects">
-                {this.state.projects.map((project, id) =>
+                {merged.map(project =>
                     <Project className="project"
-                        key={id}
+                        key={project.id}
                         name={project.name}
                         skills={project.skills}
                         description={project.description}
                         livePage={project.livePage}
-                        repo={project.repo}
+                        repo={project.clone_url}
                     />
                 )}
-                <ul>
-                    {data
-                        .filter(repo => repo.archived === false)
-                        .map((repo, index) => (
-                            <li key={index}>
-                                {repo.description}
-                            </li>
-                        ))}
-                </ul>
             </div>
         )
     }
