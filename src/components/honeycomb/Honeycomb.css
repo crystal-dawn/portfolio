@@ -3,8 +3,7 @@
     margin: 1em auto;
     width: 10em;
     height: 17.32em;
-    border-radius: 1em/.5em;
-    transition: opacity 2s;
+    border-radius: 10%/5%;
     transform: rotate(90deg) translateX(-100%);
     z-index: -1;
     border-bottom: 3px inset #fcd4B4;
