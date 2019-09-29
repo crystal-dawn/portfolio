@@ -1,20 +1,20 @@
 [
   {
     "id": "156446738",
-    "name": "Neighborhood Map",
-    "skills": [ "fab fa-react fa-3x", "fab fa-foursquare fa-3x", "fab fa-google fa-3x" ],
+    "name": "",
+    "skills": ["fab fa-react fa-3x", "fab fa-foursquare fa-3x", "fab fa-google fa-3x"],
     "livePage": "http://udacityneighborhoodmapproject.netlify.com/"
   },
   {
-    "id": "179909938",
-    "name": "Resource Collection",
+    "id": "170035135",
+    "name": "",
     "skills": [ "fab fa-gulp fa-3x", "fab fa-css3 fa-3x", "fab fa-npm fa-3x" ],
-    "livePage": "https://crystal-dawn.github.io/udacity-fend-restaurant-reviews-stage-1-resources/"
+    "livePage": "https://crystal-dawn.github.io/udacity-fend-arcade-game-resources/"
   },
   {
     "id": "144440368",
-    "name": "Restaurant Reviews",
-    "skills": [ "fab fa-accessible-icon fa-3x", "fab fa-html5 fa-3x", "fab fa-css3 fa-3x" ],
+    "name": "",
+    "skills": ["fab fa-accessible-icon fa-3x", "fab fa-html5 fa-3x", "fab fa-css3 fa-3x"],
     "livePage": "https://crystal-dawn.github.io/restaurant-reviews-stage-1/"
   }
 ]
