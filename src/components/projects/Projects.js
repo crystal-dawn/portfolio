@@ -37,15 +37,15 @@ export default class Projects extends Component {
 
     }
 
+
     render() {
         const { projects, data, isLoading, error } = this.state;
-        {/* Merge the existing project array with imported GitHub API data */}
         const merged = [];
 
         projects.forEach(project => {
             merged.push({
                 ...project,
-                ...(data.find(repo => repo.id == project.id))
+                ...(data.find(repo => repo.id === parseInt(project.id)))
             });
         })
 

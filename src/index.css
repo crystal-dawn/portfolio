@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Laila&display=swap');
+@font-face {
+    font-family: 'Luiss Sans';
+    font-display: swap;
+    src: local('Luiss Sans Regular'), local('LuissSans-Regular'), url('LuissSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IM FELL Great Primer PRO';
+    font-display: swap;
+    src: local('IM FELL Great Primer PRO Roman'), local('IM_FELL_Great_Primer_PRO_Roman'), url('IM_FELL_Great_Primer_PRO_Roman.woff2') format('woff2');
+}
 
 body {
   -webkit-font-smoothing: antialiased;

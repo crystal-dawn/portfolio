@@ -1,10 +1,10 @@
 import React from 'react';
 import './Info.css';
 
+/*Format slug from GitHub API data.
+ * Projects.json has to have an empty string for name 
+ */
 const Info = (props) => {
-    {/*Format slug from GitHub API data.
-     * Projects.json has to have an empty string for name 
-     */}
     const name = props.name.replace(/-/gi, " ");
 
     return (

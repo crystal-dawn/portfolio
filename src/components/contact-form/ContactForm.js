@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import './ContactForm.css';
 
 class Contactform extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (
